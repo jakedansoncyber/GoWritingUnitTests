@@ -29,7 +29,7 @@ go test
 
 ## Testing Related Packages
 
-### Testing packages included in the standard library
+### ackages included in the standard library
 
 ![](./images/test-packages.png)
 
@@ -42,7 +42,7 @@ go test
 - net/http/httptest
     - Allows you to simulate requests, response recorders to write assertions against this or even test servers to do real e2e testing
 
-### Community driven testing related packages
+### Community driven packages
 
 - Testify
     - Provides the complete assertion experience if you like writing those
