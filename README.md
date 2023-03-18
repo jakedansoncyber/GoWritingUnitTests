@@ -28,15 +28,21 @@ go test
 # Get results of of all tests instead of failed ones
 go test -v
 
-# See the code coverage of your tests
-go test -cover
+# See the code coverage of your tests from root directory
+go test -cover ./...
 
-# Generate code coverage & analyze the coverage file
-go test -coverprofile cover.out
+# Generate code coverage & analyze the coverage file from root directory
+go test -coverprofile cover.out ./...
 go tool cover -func cover.out
-go tool cover -html cover.out # run it in a browser as well!
-go test -coverprofile count.out -covermode count # Get the count of how many times the function has been tested
-go tool cover -html count # Check the count.out
+
+# Run the same report in a browser!
+go tool cover -html cover.out 
+
+# Get the count of how many times the function has been tested
+go test -coverprofile count.out -covermode count 
+
+# Check the count.out in a browser
+go tool cover -html count 
 ```
 
 
