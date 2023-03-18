@@ -10,11 +10,28 @@ This program & documentation will display how to write "Tests" & "Benchmark" tes
 
 # Fundamentals
 
-In order for go to pick up on which projects are unit test projects, you must go the with _test suffix naming convention:
+## Prereqs
+- You must name the test file after the file you are testing and use the _test ***suffx*** after that file
 
-```
-{project_name}**_tests**
-```
+  - In order for go to pick up on which projects are unit test projects, you must go the with _test suffix naming convention:
+
+    ```
+    {project_name}_test
+
+    ex:
+
+    main.go
+    main_test.go
+    ```
+- You must have the Test ***prefix*** in your function in order for the function to be picked up as a test
+- Use the same package that your code resides in for whitebox testing. This allows you to use the functions inside of the package.
+- Use the _test prefix on your package to do blackbox testing. This says what package you are testing, but you don't get the internals of that package.
+
+![](./images/unit-test-prereqs.png)
+
+
+
+
 ### Commands to run tests
 
 ![](./images/commands.png)
@@ -46,14 +63,6 @@ go tool cover -html count
 ```
 
 
-
-## Prereqs
-- You must name the test file after the file you are testing and use the _test ***suffx*** after that file
-- You must have the Test ***prefix*** in your function in order for the function to be picked up as a test
-- Use the same package that your code resides in for whitebox testing. This allows you to use the functions inside of the package.
-- Use the _test prefix on your package to do blackbox testing. This says what package you are testing, but you don't get the internals of that package.
-
-![](./images/unit-test-prereqs.png)
 
 
 ## Best Practices
