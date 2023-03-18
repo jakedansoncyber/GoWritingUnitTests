@@ -1,12 +1,12 @@
 # Credit
 
-Images & everything that I learned came from 
+Images & everything that I learned came from Testing Go Applications By Mike Van Sickle on plural sight.
 
 # Unit Testing in Golang
 
 ![](./images/unit-test.png)
 
-This program & documentation will display how to write "Tests" & "Benchmark" tests from the picture above. Documentation tests sound super intersting, so looking forward to learning that.
+This program & documentation will display how to write "Tests" & "Benchmark" tests from the picture above. Documentation tests sound super interesting, so looking forward to learning that, but won't be apart of this documentation.
 
 # Fundamentals
 
@@ -70,6 +70,8 @@ go tool cover -html count # Check the count.out
     - Contains readers and writers that act like very specific aspects of a reader or writer
 - net/http/httptest
     - Allows you to simulate requests, response recorders to write assertions against this or even test servers to do real e2e testing
+
+[Learn more from the golang pkg/testing docs](https://golang.org/pkg/testing)
 
 ### Community driven packages
 
